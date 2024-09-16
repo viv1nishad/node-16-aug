@@ -9,4 +9,8 @@ router.get('/users',(req,res)=>{
 
 })
 
+router.get('/user/:id',(req,res)=>{
+   usercontroller.getParticularUser(req,res);
+})
+
 module.exports=router;
